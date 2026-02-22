@@ -10,7 +10,9 @@
 
 body {
     font-family: "Moderustic", sans-serif;
-    background-color: rgb(31, 30, 30);
+    background-color: rgba(31, 30, 30, 0.507);
+    background-image: linear-gradient(rgba(31, 30, 30, 0.507), rgba(31, 30, 30, 0.507)), url('assets/background_img.jpg');
+    background-size: cover;
 }
 
 html {
@@ -337,6 +339,10 @@ section {
     height: 200px;
     width: 400px;
     margin: auto 0;
+}
+
+#about-text {
+    color: rgb(255, 255, 255)
 }
 
 /* EXPERIENCE SECTION */

@@ -131,7 +131,7 @@ a:hover {
     list-style: none;
 }
 
-.menu-links a:hover{
+.menu-links a:hover, .menulinks.open:hover {
     color: grey;
     text-decoration: underline;
     text-underline-offset: 0.25rem;
@@ -140,6 +140,8 @@ a:hover {
 
 .menu-links.open {
     max-height: 300px;
+    background: rgba(22, 37, 18, 0) 0.1rem;
+    transition: all 0.3 ease-in-out;
 }
 
 .hamburger-icon.open span:first-child {

@@ -400,24 +400,31 @@ article .icon {
 
 /* PROJECTS SECTION */
 
-.projects-container {
-    display: flex; 
-    justify-content: space-around;
+#projects {
+    position: relative;
 }
 
-.projects-clickable-container {
-    width: 30%; /* Sets the width of each box */
-    padding: 20px;
-    border: 1px solid black;
+.project-img {
+    border-radius: 2rem;
+    max-width: 800px;
+    height: 400px;
+}
+
+.project-title {
+    margin: 1rem;
+}
+
+#projects-heading {
     text-align: center;
+    align-items: center;
 }
 
-.project-link {
-    float: left;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.project-heading-btn {
+    width: 200px;
+    margin-top: 10px;
 }
+
+
 
 /* CONTACT SECTION */
 

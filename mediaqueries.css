@@ -122,4 +122,13 @@
     .text-container {
         text-align: justify;
     }
+
+    .projects-container {
+        width: 375px;
+    }
+
+    .project-img {
+    max-width: 100%;
+    display: flex;
+}
 }

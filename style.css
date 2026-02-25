@@ -408,6 +408,7 @@ article .icon {
     border-radius: 2rem;
     max-width: 800px;
     height: 400px;
+    display: flex;
 }
 
 .project-title {

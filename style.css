@@ -189,6 +189,7 @@ section {
     justify-content: center;
     gap: 5rem;
     height: 80vh;
+    scroll-margin-top: 150px;
 }
 
 .section__pic-container {

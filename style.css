@@ -398,6 +398,27 @@ article .icon {
     cursor: default;
 }
 
+/* PROJECTS SECTION */
+
+.projects-container {
+    display: flex; 
+    justify-content: space-around;
+}
+
+.projects-clickable-container {
+    width: 30%; /* Sets the width of each box */
+    padding: 20px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.project-link {
+    float: left;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 /* CONTACT SECTION */
 
 #contact {

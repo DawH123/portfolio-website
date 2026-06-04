@@ -8,7 +8,7 @@
     padding: 0;
 }
 
-body {
+.index-body {
     font-family: "Moderustic", sans-serif;
     background-color: rgba(31, 30, 30, 0.507);
     background-image: linear-gradient(rgba(31, 30, 30, 0.507), rgba(31, 30, 30, 0.507)), url('assets/background_img.jpg');
@@ -480,7 +480,7 @@ article .icon {
     height: 2.2rem;
 }
 
-/*FOOTER SECTION */
+/* FOOTER SECTION */
 
 footer {
     height: 26vh;
@@ -489,4 +489,54 @@ footer {
 
 footer p {
     text-align: center;
+}
+
+/* PROJECTS PAGE SECTION */
+ 
+.projects-body {
+    background-image: linear-gradient(rgba(31, 30, 30, 0.507), rgba(31, 30, 30, 0.507)), url('assets/under-development-2.jpg');
+}
+
+#project-links {
+    font-size: 2.5rem;
+    float: left;
+    
+}
+
+/* Initial Center Position */
+.middle-nav {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  width: 55%;
+  transform: translateY(-50%);
+  transition: all 1s ease-out; /* Smooth transition */
+}
+
+/* Position Top */
+.nav-top {
+  position: fixed;
+  top: 5%;
+  left: 25%;
+  width: 100%;
+  transform: none;
+  z-index: 1000;
+}
+
+#project-links .active {
+    color: grey;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    text-decoration-color: rgb(181,181,181);
+}
+
+/* FADING IN */
+.fade {
+    animation: fadeIn 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% {opacity: 1; }
 }

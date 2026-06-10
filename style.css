@@ -351,14 +351,14 @@ section {
 }
 
 .about__pic-container {
-    height: 200px;
-    width: 400px;
+    height: 100rem;
+    width: 100rem;
     margin: auto 0;
 }
 
 #about-text {
     color: rgb(255, 255, 255);
-    font-size: 1.3rem;
+    font-size: 2rem;
 }
 
 /* EXPERIENCE SECTION */

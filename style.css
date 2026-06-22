@@ -34,7 +34,7 @@ h3 {
 /* TRANSITION */
 
 a, 
-.btn {
+.btn, .contact-button {
     transition: all 300ms ease;
 }
 
@@ -57,13 +57,13 @@ nav {
     font-size: 1.5rem;
 }
 
-a {
+a, .contact-button {
     color: white;
     text-decoration: none;
     text-decoration-color: white;
 }
 
-a:hover {
+a:hover, .contact-button:hover {
     color: grey;
     text-decoration: underline;
     text-underline-offset: 1rem;
@@ -232,6 +232,26 @@ section {
     text-align: center;
 }
 
+.about-title {
+    padding-bottom: 30px;
+}
+
+.about-text-details-container {
+    transition: all 300ms ease;
+}
+
+.about-text-details-container:hover {
+    padding: 1.5rem;
+    flex: 1;
+    background: rgb(22, 37, 18) 0.1rem;
+    border: rgb(255,255,255) 0.1rem solid;
+    border-radius: 2rem;
+    border-color: rgb(163, 163, 163);
+    text-align: center;
+    transition: all 300ms ease;
+}
+
+
 #socials-container {
     display: flex;
     justify-content: center;
@@ -258,12 +278,14 @@ section {
     font-weight: 600;
     transition: all 300ms ease;
     padding: 1rem;
-    width: 8rem;
+    width: 9rem;
     border-radius: 2rem;
+    text-align: center;
 }
 
 .btn-color-2 {
     border: rgb(51, 51, 51) 0.1rem solid;
+    color: rgb(53,53,53);
 }
 
 .btn-color-1:hover, .btn-color-2:hover {
@@ -284,7 +306,7 @@ section {
 }
 .btn-color-1:hover {
     background: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
+    color: rgb(53,53,53);
     border: rgb(53,53,53) 0.1rem solid;
 }
 
@@ -423,7 +445,7 @@ article .icon {
 }
 
 .project-heading-btn {
-    width: 200px;
+    width: 250px;
     margin-top: 10px;
 }
 
@@ -480,6 +502,34 @@ article .icon {
     height: 2.2rem;
 }
 
+.contact-button {
+    color: white;
+    text-decoration: none;
+    text-decoration-color: white;
+}
+
+.contact-button:hover {
+    color: grey;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    text-decoration-color: rgb(181,181,181);
+}
+
+/* MODAL SECTION */
+
+.modal-body {
+    /*background-image: linear-gradient(rgba(31, 30, 30, 0.507), rgba(31, 30, 30, 0.507)), url('assets/modal-image.jpg') !important;*/
+    background: rgb(22, 37, 18);
+}
+
+.modal-header, .modal-footer {
+    background: rgb(22, 37, 18);
+}
+
+.modal-title, .col-form-label {
+    color: white;
+}
+
 /* FOOTER SECTION */
 
 footer {
@@ -531,12 +581,13 @@ footer p {
 }
 
 /* FADING IN */
-.fade {
+.custom-fade {
     animation: fadeIn 2s;
     animation-fill-mode: forwards;
 }
 
 @keyframes fadeIn {
     0% { opacity: 0; }
-    100% {opacity: 1; }
+    100% { opacity: 1; }
 }
+

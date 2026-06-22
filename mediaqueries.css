@@ -86,6 +86,11 @@
         flex-wrap: wrap;
     }
 
+    .about__pic-container {
+        width: 400px;
+        height: 200px;
+    }
+
     .contact-info-container {
         margin: 0;
     }

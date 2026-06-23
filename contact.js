@@ -1,14 +1,9 @@
 //email functionality
 
-document.querySelector('.btn-color-1').addEventListener('click', async () => {
+document.getElementById('contactButton').addEventListener('click', async () => {
     const name = document.getElementById('name').value.trim();
     const email = document.getElementById('email').value.trim();
     const message = document.getElementById('message').value.trim();
-
-    if (!name || !email || !message) {
-        alert('Please fill out all fields before sending.');
-        return;
-    }
 
     try {
         const res = await fetch('/contact', {
@@ -16,6 +11,11 @@ document.querySelector('.btn-color-1').addEventListener('click', async () => {
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ name, email, message })
         });
+
+        if (!name || !email || !message) {
+        alert('Please fill out all fields before sending.');
+        return;
+    }
 
         const data = await res.json();
 

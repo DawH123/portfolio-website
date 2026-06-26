@@ -517,13 +517,17 @@ article .icon {
 
 /* MODAL SECTION */
 
-.modal-body {
-    /*background-image: linear-gradient(rgba(31, 30, 30, 0.507), rgba(31, 30, 30, 0.507)), url('assets/modal-image.jpg') !important;*/
-    background: rgb(22, 37, 18);
+.modal-content.modal-with-bg {
+    background-image: linear-gradient(rgba(31, 30, 30, 0.507), rgba(31, 30, 30, 0.507)), url('assets/modal_image.jpg') !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-color: transparent !important;
 }
 
 .modal-header, .modal-footer {
-    background: rgb(22, 37, 18);
+    /*background: rgb(22, 37, 18);*/
+    background: rgba(31, 53, 26, 0.26);
 }
 
 .modal-title, .col-form-label {

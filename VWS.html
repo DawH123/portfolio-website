@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vehicle Weight System</title>
+
+    <link rel="stylesheet" href="vws_style.css" />
+  </head>
+
+  <body class="vws-body custom-fade">
+    <header class="vws-header" id="head">
+      <!-- <a href="#about">About</a>
+      <a href="#team">Meet the Team</a>
+      <a href="#documents">Documents</a> -->
+      <a href="index.html" class="header-home"> HOME </a>
+    </header>
+
+    <!-- HOME SECTION -->
+    <section id="home" class="section">
+      <div class="nav-image-container">
+        <div class="nav-image">
+          <img src="assets/VWS/about.jpg" class="nav-image" alt="about" />
+          <a href="#about">
+            <div class="overlay">
+              <h1>About This Project</h1>
+            </div>
+          </a>
+        </div>
+
+        <div class="nav-image">
+          <img src="assets/VWS/team.jpg" class="nav-image" alt="team" />
+          <a href="#team">
+            <div class="overlay">
+              <h1>Meet the Team</h1>
+            </div>
+          </a>
+        </div>
+
+        <div class="nav-image">
+          <img
+            src="assets/VWS/documents.jpg"
+            class="nav-image"
+            alt="documents"
+          />
+          <a href="#documents">
+            <div class="overlay">
+              <h1>Project Documents</h1>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="title-container">
+        <h1 class="title">VEHICLE WEIGHT SYSTEM</h1>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section">
+      <img
+        src="./assets/icons/arrow-top.png"
+        alt="Arrow icon"
+        class="icon arrow team-arrow-top"
+        onclick="location.href = '#head'"
+      />
+
+      <div class="big-info-container">
+        <div class="about-title-container">
+          <h2 class="about-title">About This Project</h2>
+        </div>
+
+        <div class="info-container">
+          <div class="info">
+            <h2 class="info-title">Overview</h2>
+            <p class="info-text">
+              Weigh stations, recycling centers, and waste management facilities
+              rely heavily on accurate vehicle identification and weight
+              tracking to process transactions, enforce regulations, and
+              maintain operational efficiency. They process hundreds of trucks
+              daily, 24 / 7, continuously.
+            </p>
+          </div>
+
+          <div class="info">
+            <h2 class="info-title">Problem</h2>
+            <p class="info-text">
+              Current systems rely on human-verification, as they are fully
+              manual. Manual steps create bottlenecks and limit efficiency,
+              which can then lead to errors in data entry, affecting compliance
+              and record accuracy.
+            </p>
+          </div>
+
+          <div class="info">
+            <h2 class="info-title">Solution</h2>
+            <p class="info-text">
+              What this project aims to do is automate the entire vehicle weight
+              process: from vehicle identification to cargo classification, all
+              the way to vehicle weight tracking and data storage. Our Vehicle
+              Weight System creates a solution that provides a safer work
+              environment, as well as a much more efficient workflow regarding
+              truck processing.
+            </p>
+          </div>
+        </div>
+
+        <div class="tech-container">
+          <div class="tech">
+            <details class="collapsible-section">
+              <summary style="list-style: none">
+                <h2 class="tech-title">AI / Machine Learning</h2>
+              </summary>
+
+              <div class="tech-text-container">
+                <div class="tech-text-header">
+                  <p class="tech-text">
+                    TensorFlow, YOLO, OCR, LPR model and Cargo Detection Model
+                  </p>
+                </div>
+                <div class="tech1-container">
+                  <div class="tech1">
+                    <p class="tech-text-inside">
+                      This project uses a License Plate Recognition (LPR) model
+                      to conduct vehicle identification, tracking and storing
+                      the license plate. This model uses YOLO for plate image
+                      detection and EasyOCR for text extraction from plate
+                      image. This project also uses an image classification
+                      model MobileNet, in combination with YOLO, to detect what
+                      type of cargo each truck has
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </details>
+          </div>
+
+          <div class="tech">
+            <details class="collapsible-section">
+              <summary style="list-style: none">
+                <h2 class="tech-title">Backend & Database</h2>
+              </summary>
+
+              <div class="tech-text-container">
+                <div class="tech-text-header">
+                  <p class="tech-text">Python, Flask, PostgreSQL, Docker</p>
+                </div>
+                <div class="tech1">
+                  <p class="tech-text-inside">
+                    The backend for this project primarily uses Python. It uses
+                    Flask as a proxy server for our multi-threaded tracking
+                    approach, also using PostgreSQL for our database Docker to
+                    wrap everything inside
+                  </p>
+                </div>
+              </div>
+            </details>
+          </div>
+
+          <div class="tech">
+            <details class="collapsible-section">
+              <summary style="list-style: none">
+                <h2 class="tech-title">Hardware & Sensors</h2>
+              </summary>
+
+              <div class="tech-text-container">
+                <div class="tech-text-header">
+                  <p class="tech-text">Jetson Orin Nano, Cameras, OpenCV</p>
+                </div>
+                <div class="tech1">
+                  <p class="tech-text-inside">
+                    This entire project is hosted on a Jetson Orin Nano by
+                    NVIDIA. This type of board is perfect for this project, as
+                    the board is specifically made with AI and machine learning
+                    models in mind. We also use two Innomaker cameras: one for
+                    the LPR detection model and another for the Cargo Detection
+                    model.
+                  </p>
+                </div>
+              </div>
+            </details>
+          </div>
+        </div>
+      </div>
+
+      <img
+        src="./assets/icons/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow team-arrow-bottom"
+        onclick="location.href = '#team'"
+      />
+    </section>
+
+    <!-- TEAM SECTION -->
+    <section id="team" class="section">
+      <img
+        src="./assets/icons/arrow-top.png"
+        alt="Arrow icon"
+        class="icon arrow team-arrow-top"
+        onclick="location.href = '#about'"
+      />
+
+      <div class="team-container">
+        <div class="team-member team-title">
+          <h2 class="team-title">Meet the Team</h2>
+        </div>
+        <div class="team-member">
+          <img src="assets/VWS/Chinmayi.png" alt="Chinmayi Achanta" />
+          <div class="team-member-info">
+            <h3>Chinmayi Achanta</h3>
+            <p>Project Manager / LPR Developer</p>
+          </div>
+        </div>
+        <div class="team-member">
+          <img src="assets/VWS/Dawson.jpg" alt="Dawson Holmes" />
+          <div class="team-member-info">
+            <h3>Dawson Holmes</h3>
+            <p>Backend / Database Developer</p>
+          </div>
+        </div>
+        <div class="team-member">
+          <img src="assets/VWS/Anant.png" alt="Anant Kumar" />
+          <div class="team-member-info">
+            <h3>Anant Kumar</h3>
+            <p>Backend Developer</p>
+          </div>
+        </div>
+        <div class="team-member">
+          <img src="assets/VWS/Joseph.png" alt="Joseph Benno" />
+          <div class="team-member-info">
+            <h3>Joseph Benno</h3>
+            <p>Cargo Detection Developer</p>
+          </div>
+        </div>
+        <div class="team-member">
+          <img src="assets/VWS/Noah.png" alt="Noah Albert" />
+          <div class="team-member-info">
+            <h3>Noah Albert</h3>
+            <p>Hardware / Sensor Engineer</p>
+          </div>
+        </div>
+      </div>
+
+      <img
+        src="./assets/icons/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow team-arrow-bottom"
+        onclick="location.href = '#documents'"
+      />
+    </section>
+
+    <!-- DOCUMENTS SECTION -->
+    <section id="documents" class="section">
+      <h2 class="doc-title">Documentation</h2>
+
+      <img
+        src="./assets/icons/arrow-top.png"
+        alt="Arrow icon"
+        class="icon arrow doc-arrow-top"
+        onclick="location.href = '#team'"
+      />
+
+      <div class="documents-container">
+        <div class="document">
+          <embed
+            style="height: 100%; width: 100%"
+            src="assets/pdfs/SD1 Final Design Document.pdf"
+            type=""
+          />
+        </div>
+
+        <div class="document">
+          <embed
+            style="height: 100%; width: 100%"
+            src="assets/pdfs/CDR.pdf"
+            type=""
+          />
+        </div>
+
+        <div class="document">
+          <iframe
+            width="100%"
+            height="100%"
+            src="https://www.youtube.com/embed/YYN9VZA1SqA"
+            title="L26 CDR Demo"
+            frameborder="0"
+            allow="
+              accelerometer;
+              autoplay;
+              clipboard-write;
+              encrypted-media;
+              gyroscope;
+              picture-in-picture;
+              web-share;
+            "
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          >
+          </iframe>
+        </div>
+      </div>
+
+      <div class="document-footers">
+        <a href="#head" class="doc-foot"><h2>BACK TO TOP</h2></a>
+        <a href="index.html" class="doc-foot"><h2>HOMEPAGE</h2></a>
+      </div>
+    </section>
+
+    <footer>
+      <p>Copyright &#169; 2026 Dawson Holmes. All Rights Reserved.</p>
+    </footer>
+    <script src="fade.js"></script>
+  </body>
+</html>

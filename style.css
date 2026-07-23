@@ -11,7 +11,7 @@
 .index-body {
     font-family: "Moderustic", sans-serif;
     background-color: rgba(31, 30, 30, 0.507);
-    background-image: linear-gradient(rgba(31, 30, 30, 0.507), rgba(31, 30, 30, 0.507)), url('assets/background_img.jpg');
+    background-image: linear-gradient(rgba(31, 30, 30, 0.507), rgba(31, 30, 30, 0.507)), url('assets/images/background_img.jpg');
     background-size: cover;
 }
 
@@ -243,7 +243,7 @@ section {
 .about-text-details-container:hover {
     padding: 1.5rem;
     flex: 1;
-    background: rgb(22, 37, 18) 0.1rem;
+    background: rgb(22, 37, 18, 0.582) 0.1rem;
     border: rgb(255,255,255) 0.1rem solid;
     border-radius: 2rem;
     border-color: rgb(163, 163, 163);
@@ -363,8 +363,8 @@ section {
 }
 
 .details-container:hover {
-        border: rgb(255,255,255) 0.1rem solid;
-        background: rgb(22, 37, 18) 0.1rem;
+    border: rgb(255,255,255) 0.1rem solid;
+    background: rgb(22, 37, 18) 0.1rem;
 }
 
 .section-container {
@@ -432,7 +432,7 @@ article .icon {
     display: flex;
     border-radius: 2rem;
     width: 100%;
-    height: 100%;
+    height: 75%;
 }
 
 .project-title {
@@ -518,7 +518,7 @@ article .icon {
 /* MODAL SECTION */
 
 .modal-content.modal-with-bg {
-    background-image: linear-gradient(rgba(31, 30, 30, 0.507), rgba(31, 30, 30, 0.507)), url('assets/modal_image.jpg') !important;
+    background-image: linear-gradient(rgba(31, 30, 30, 0.507), rgba(31, 30, 30, 0.507)), url('assets/images/modal_image.jpg') !important;
     background-size: cover !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
@@ -612,12 +612,43 @@ footer p {
 
 /* FADING IN */
 .custom-fade {
-    animation: fadeIn 2s;
+    animation: fadeInPage 2s;
     animation-fill-mode: forwards;
 }
 
-@keyframes fadeIn {
+@keyframes fadeInPage {
     0% { opacity: 0; }
     100% { opacity: 1; }
 }
+
+.fadeIn {
+  animation-name: fadeIn;
+  animation-duration: .5s;
+  animation-fill-mode: forwards;
+}
+
+.fadeOut {
+  animation-name: fadeOut;
+  animation-duration: .5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
 

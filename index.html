@@ -1,512 +1,582 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
-    <link rel="stylesheet" 
-    href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" 
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
-    crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mediaqueries.css">
-</head>
-<body class="index-body custom-fade">  
-    <nav id="desktop-nav"> <!-- this is the top area with the links-->
-        <div class="logo"> Dawson Holmes</div> 
-        <div>
-
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body class="index-body custom-fade">
+    <nav id="desktop-nav">
+      <!-- this is the top area with the links-->
+      <div class="logo">Dawson Holmes</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
     </nav>
-    <nav id="hamburger-nav"> <!-- this is the hamburger menu that appears when screen is small-->
-        <div class="logo"> Dawson Holmes</div>
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="menu-links">
-                <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="#contact" onclick="toggleMenu()" >Contact</a></li>
-            </div>
+    <nav id="hamburger-nav">
+      <!-- this is the hamburger menu that appears when screen is small-->
+      <div class="logo">Dawson Holmes</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
     </nav>
 
     <!-- PROFILE SECTION -->
-    <section id="profile">
-        <div class="section__pic-container">
-            <img src="./assets/DSC_0314(1).png" alt="Dawson Holmes profile picture"> <!-- replace with better pic that has a circle shape-->
+    <section id="profile" class="section">
+      <div class="section__pic-container">
+        <img
+          src="./assets/images/DSC_0314(1).png"
+          alt="Dawson Holmes profile picture"
+        />
+        <!-- replace with better pic that has a circle shape-->
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Dawson Holmes</h1>
+        <p class="section__text__p2">IT Specialist</p>
+        <p class="section__text__separator">
+          ________________________________________
+        </p>
+        <p class="section__text__p3">Cyber Security Specialist</p>
+
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/pdfs/Dawson_Holmes_CV.pdf')"
+          >
+            Download CV
+          </button>
+
+          <button
+            class="btn btn-color-1"
+            onclick="location.href = './#contact'"
+          >
+            Contact Info
+          </button>
         </div>
-        <div class="section__text">
-
-            <p class="section__text__p1">Hello, I'm</p>
-            <h1 class="title">Dawson Holmes</h1>
-            <p class="section__text__p2">IT Specialist</p>
-            <p class="section__text__separator"> ________________________________________</p>
-            <p class="section__text__p3">Cyber Security Specialist</p>
-        
-            <div class="btn-container">
-                <button class="btn btn-color-2" onclick="window.open('./assets/Resume_DH1.pdf')">
-                    Download CV
-                </button>
-
-                <button class="btn btn-color-1" onclick="location.href='./#contact'">
-                    Contact Info
-                </button>
-
-            </div>
-            <div id="socials-container">
-                <img src="./assets/linkedin-white.png" 
-                     alt="My LinkedIn profile" 
-                     class="icon linkedin-icon" 
-                     onclick="location.href='https://www.linkedin.com/in/dawson-holmes-84b592187/'" 
-                     /> 
-                <img src="./assets/github-white.png" 
-                     alt="My Github profile" 
-                     class="icon github-icon" 
-                     onclick="location.href='https://github.com/DawH123/'" 
-                     />
-            </div>
+        <div id="socials-container">
+          <img
+            src="./assets/icons/linkedin-white.png"
+            alt="My LinkedIn profile"
+            class="icon linkedin-icon"
+            onclick="
+              location.href =
+                'https://www.linkedin.com/in/dawson-holmes-84b592187/'
+            "
+          />
+          <img
+            src="./assets/icons/github-white.png"
+            alt="My Github profile"
+            class="icon github-icon"
+            onclick="location.href = 'https://github.com/DawH123/'"
+          />
         </div>
+      </div>
     </section>
 
     <!-- ABOUT SECTION -->
-    <section id="about">
-        <p class="section__text__p1">Get to Know More</p>
-        <h1 class="title about-title">About Me</h1>
-        <div class="section-container">
-            <div class="about__pic-container">
-                <img src="./assets/IMG_4264.jpg" 
-                    alt="Profile picture" 
-                    class="about-pic"
-                /> <!-- replace this with a better pic -->
-            </div>
-            <div class="about-details-container">
-                <div class="text-container about-text-details-container">
-                    <p id="about-text"> Hi! I'm Dawson Holmes. I'm from Fort Pierce, Florida freshly graduated 
-                        from the University of Central Florida, with a Bachelor's in Computer Science and a Minor
-                        in Secure Computing and Networks (SCAN). Tech is a field that has always interested me. 
-                        From me building my own computer at ten years old to creating professional web applications, 
-                        all of it has been in pursuit of my own interests in tech, as well as bettering my understanding 
-                        of computing as a whole.
-                    </p>
-                </div>
-                 <div class="about-containers">
-                    <div class="details-container">
-                        <img src="./assets/experience.png" 
-                            alt="experience icon" 
-                            class="icon"
-                        />
-                        <h3>Experience</h3>
-                        <p>4+ years <br /> Coding Experience</p>
-                        <p>Multiple Team-Led Projects</p>
-                    </div>
-                    <div class="details-container">
-                        <img src="./assets/education.png" 
-                            alt="Education icon" 
-                            class="icon"
-                        />
-                        <h3>Education</h3>
-                        <p>B.Sc. Computer Science<br /> Minor in Secure Computing and Networks (SCAN)</p>
-                    </div>
-                    <div class="details-container">
-                        <img src="./assets/settings.png" 
-                            alt="skills icon" 
-                            class="icon"
-                        />
-                        <h3>Skills</h3>
-                        <p>Solution Oriented</p>
-                        <p>Determined</p>
-                        <p>Steady Under Pressure</p>
-                    </div>
-                </div>
-            </div>
+    <section id="about" class="section">
+      <p class="section__text__p1">Get to Know More</p>
+      <h1 class="title about-title">About Me</h1>
+      <div class="section-container">
+        <div class="about__pic-container">
+          <img
+            src="./assets/images/IMG_4264.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
         </div>
-        <img src="./assets/arrow.png" 
-             alt="Arrow icon" 
-             class="icon arrow" 
-             onclick="location.href='./#experience'" 
-        />
+        <div class="about-details-container">
+          <div class="text-container about-text-details-container">
+            <p id="about-text">
+              Hi! I'm Dawson Holmes. I'm from Fort Pierce, Florida freshly
+              graduated from the University of Central Florida, with a
+              Bachelor's in Computer Science and a Minor in Secure Computing and
+              Networks (SCAN). Tech is a field that has always interested me.
+              From me building my own computer at ten years old to creating
+              professional web applications, all of it has been in pursuit of my
+              own interests in tech, as well as bettering my understanding of
+              computing as a whole.
+            </p>
+          </div>
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/icons/experience.png"
+                alt="experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>
+                4+ years <br />
+                Coding Experience
+              </p>
+              <p>Multiple Team-Led Projects</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/icons/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>
+                B.Sc. Computer Science<br />
+                Minor in Secure Computing and Networks (SCAN)
+              </p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/icons/settings.png"
+                alt="skills icon"
+                class="icon"
+              />
+              <h3>Skills</h3>
+              <p>Solution Oriented</p>
+              <p>Determined</p>
+              <p>Steady Under Pressure</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/icons/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href = './#experience'"
+      />
     </section>
 
     <!-- EXPERIENCE SECTION -->
-    <section id="experience">
-        <p class="section__text__p1">View My</p>
-        <h1 class="title">Experience</h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
-                <div class="details-container">
-                    <h2 class="experience-sub-title">General</h2>
-                    <div class="article-container">
-                        <article>
-                            <img 
-                                src="./assets//checkmark.png" 
-                                alt="Experience icon" 
-                                class="icon"
-                            />
-                            <div>
-                                <h3>HTML</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img 
-                                src="./assets/checkmark.png" 
-                                alt="Experience icon" 
-                                class="icon"
-                            />
-                            <div>
-                                <h3>CSS</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img 
-                                src="./assets/checkmark.png" 
-                                alt="Experience icon" 
-                                class="icon"
-                            />
-                            <div>
-                                <h3>JavaScript</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img 
-                                src="./assets/checkmark.png" 
-                                alt="Experience icon" 
-                                class="icon"
-                            />
-                            <div>
-                                <h3>Java</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img 
-                                src="./assets/checkmark.png" 
-                                alt="Experience icon" 
-                                class="icon"
-                            />
-                            <div>
-                                <h3>Python</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img 
-                                src="./assets/checkmark.png" 
-                                alt="Experience icon" 
-                                class="icon"
-                            />
-                            <div>
-                                <h3>R</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                    </div>
+    <section id="experience" class="section">
+      <p class="section__text__p1">View My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">General</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/icons/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
                 </div>
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Cyber / Network</h2>
-                    <div class="article-container">
-                        <article>
-                            <img 
-                                src="./assets//checkmark.png" 
-                                alt="Experience icon" 
-                                class="icon"
-                            />
-                            <div>
-                                <h3>AWS</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img 
-                                src="./assets/checkmark.png" 
-                                alt="Experience icon" 
-                                class="icon"
-                            />
-                            <div>
-                                <h3>Git</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img 
-                                src="./assets/checkmark.png" 
-                                alt="Experience icon" 
-                                class="icon"
-                            />
-                            <div>
-                                <h3>Linux</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        
-                    </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/icons/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
                 </div>
-
+              </article>
+              <article>
+                <img
+                  src="./assets/icons/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/icons/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Java</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/icons/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/icons/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>R</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
             </div>
-
-                <!-- new section: bottom container for experience -->
-                    <div class="about-containers">
-                        <div class="details-container">
-                            <h2 class="experience-sub-title"> Team / Project Management </h2>
-                             <div class="article-container">
-                                 <article>
-                                    <img 
-                                        src="./assets//checkmark.png" 
-                                        alt="Experience icon" 
-                                        class="icon"
-                                    />
-                                    <div>
-                                        <h3>Agile Developement</h3>
-                                        <p>Experienced</p>
-                                    </div>
-                                </article>
-                                 <article>
-                                    <img 
-                                        src="./assets//checkmark.png" 
-                                        alt="Experience icon" 
-                                        class="icon"
-                                    />
-                                    <div>
-                                        <h3>Jira</h3>
-                                        <p>Experienced</p>
-                                    </div>
-                                </article>
-                                 <article>
-                                    <img 
-                                        src="./assets//checkmark.png" 
-                                        alt="Experience icon" 
-                                        class="icon"
-                                    />
-                                    <div>
-                                        <h3>Microsoft Office</h3>
-                                        <p> Teams, Word, Powerpoint, Excel, etc.</p>
-                                    </div>
-                                </article>
-                            </div>
-                        </div>
-                    </div>
-                <!--end of new section-->
-
-
-
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Cyber / Network</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/icons/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>AWS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/icons/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/icons/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Linux</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
         </div>
-        <img src="./assets/arrow.png"
-             alt="Arrow icon"
-             class="icon arrow"
-             onclick="location.href='./#projects'"
-             />
+
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Team / Project Management</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/icons/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Agile Developement</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/icons/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Jira</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/icons/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Microsoft Office</h3>
+                  <p>Teams, Word, Powerpoint, Excel, etc.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/icons/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href = './#projects'"
+      />
     </section>
 
     <!-- PROJECTS SECTION -->
-    <section id="projects">
-        <p class="section__text__p1">Explore My</p>
-        <div id="projects-heading">
-            <h1 class="title">Featured Work</h1> 
-            <a href="projects.html">
-                <button class="btn btn-color-1 project-heading-btn">View My Other Projects!</button>
-            </a>
-        </div>
-        <div class="experience-details-container">
-            <div class="about-containers">
-                <div class="details-container color-container">
-                <div class="article-container">
-                    <!-- put a link to the eventual webpage -->
-                    <a href="">
-                        <img 
-                            src="./assets/VWS.jpg" 
-                            alt="project 1" 
-                            class="project-img">
-                    </a>
-                </div>
-                <h2 class="experience-sub-title project-title">VWS</h2>
-                <div class="btn-container">
-                    <button 
-                        class="btn btn-color-1 project-btn" 
-                        onclick="location.href='https://github.com/AnantK2243/SD1-L26-Vehicle-Weight-System.git'"
-                        >
-                        Github
-                    </button>
-                    <!-- put a link to the eventual webpage -->
-                    <button 
-                        class="btn btn-color-1 project-btn" 
-                        onclick="location.href=''"
-                        >
-                        Webpage
-                    </button>
-
-                </div>
-                </div>
-                <div class="details-container color-container">
-                <div class="article-container">
-                    <!-- put a link to the eventual webpage -->
-                    <a href="">
-                        <img 
-                            src="./assets/under-development-2.jpg" 
-                            alt="project 2" 
-                            class="project-img">
-                    </a>
-                </div>
-                <h2 class="experience-sub-title project-title">Work in Progress</h2>
-                <div class="btn-container">
-                    <!-- put a link to the eventual Github -->
-                    <button 
-                        class="btn btn-color-1 project-btn" 
-                        onclick="location.href=''"
-                        >
-                        Github
-                    </button>
-                    <!-- put a link to the eventual webpage -->
-                    <button 
-                        class="btn btn-color-1 project-btn" 
-                        onclick="location.href=''" 
-                        >
-                        Webpage
-                    </button>
-
-                </div>
-                </div>
-                <div class="details-container color-container">
-                <div class="article-container">
-                    <!-- put a link to the eventual webpage -->
-                    <a href="">
-                        <img 
-                            src="./assets/under-development.jpg" 
-                            alt="project 3" 
-                            class="project-img">
-                    </a>
-                </div>
-                <h2 class="experience-sub-title project-title">Work in Progress</h2>
-                <div class="btn-container">
-                    <!-- put a link to the eventual Github -->
-                    <button 
-                        class="btn btn-color-1 project-btn" 
-                        onclick="location.href=''"
-                        >
-                        Github
-                    </button>
-                    <!-- put a link to the eventual webpage -->
-                    <button 
-                        class="btn btn-color-1 project-btn" 
-                        onclick="location.href=''"
-                        >
-                        Webpage
-                    </button>
-
-                </div>
-                </div>
+    <section id="projects" class="section">
+      <p class="section__text__p1">Explore My</p>
+      <div id="projects-heading">
+        <h1 class="title">Featured Work</h1>
+        <a href="projects.html">
+          <button class="btn btn-color-1 project-heading-btn">
+            View My Other Projects!
+          </button>
+        </a>
+      </div>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <!-- put a link to the eventual webpage -->
+              <a href="VWS.html">
+                <img
+                  src="./assets/VWS/VWS.jpg"
+                  alt="project 1"
+                  class="project-img"
+                />
+              </a>
             </div>
-        </div>
-    
-        <img src="./assets/arrow.png"
-             alt="Arrow icon"
-             class="icon arrow"
-             onclick="location.href='./#contact'"
-             />
-
-    </section> 
-
-    <!-- CONTACT SECTION -->
-    <section id="contact">
-        <p class="section__text__p1">Get In Touch</p>
-        <h1 class="title">Contact Me</h1>
-        <div class="contact-info-upper-container">
-            <div class="contact-info-container">
-                <img src="./assets/email.png" 
-                    alt="Email icon" 
-                    class="icon contact-icon"
-                    />
-                     <p class="contact-button icon" role="button" data-toggle="modal" data-target="#emailModal" data-whatever="@mdo">dawsonjholmes@gmail.com</p>
-
-
-
-                     <!-- Contact bootstrap modal that pops up when clicking on my email -->
-                     <div class="modal fade" id="emailModal" tabindex="-1" role="dialog" aria-labelledby="emailModalLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-lg" role="document">
-                            <div class="modal-content modal-with-bg">
-                            <div class="modal-header text-center">
-                                <h5 class="modal-title text-center" id="exampleModalLabel">New message</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                <form>
-                                <div class="form-group">
-                                    <label for="recipient-name" class="col-form-label">Your Name</label>
-                                    <input type="text" class="form-control" id="name">
-                                </div>
-                                <div class="form-group">
-                                    <label for="recipient-name" class="col-form-label">Your Email</label>
-                                    <input type="text" class="form-control" id="email">
-                                </div>
-                                <div class="form-group">
-                                    <label for="message-text" class="col-form-label">Your Message</label>
-                                    <textarea class="form-control" id="message"></textarea>
-                                </div>
-                                </form>
-                                <div class="loading-dots" id="loadingDots">
-                                    <span></span><span></span><span></span>
-                                </div>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-color-2" data-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-color-1" id="contactButton">Send</button>
-                            </div>
-                            </div>
-                        </div>
-                        </div>
-
-                        
+            <h2 class="experience-sub-title project-title">
+              VEHICLE WEIGHT SYSTEM
+            </h2>
+            <div class="btn-container">
+              <!-- put a link to the eventual webpage -->
+              <button
+                class="btn btn-color-1 project-btn"
+                onclick="location.href = 'VWS.html'"
+              >
+                Webpage
+              </button>
             </div>
-            <div class="contact-info-container">
-                <img src="./assets/linkedin-white.png" 
-                    alt="LinkedIn icon" 
-                    class="icon contact-icon linkedin-icon"
-                    />
-                    <p><a href="https://www.linkedin.com/in/dawson-holmes-84b592187/">LinkedIn</a>
-                    </p>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <!-- put a link to the eventual webpage -->
+              <a href="">
+                <img
+                  src="./assets/images/under-development-2.jpg"
+                  alt="project 2"
+                  class="project-img"
+                />
+              </a>
             </div>
+            <h2 class="experience-sub-title project-title">Work in Progress</h2>
+            <div class="btn-container">
+              <!-- put a link to the eventual Github -->
+              <button
+                class="btn btn-color-1 project-btn"
+                onclick="location.href = ''"
+              >
+                Github
+              </button>
+              <!-- put a link to the eventual webpage -->
+              <button
+                class="btn btn-color-1 project-btn"
+                onclick="location.href = ''"
+              >
+                Webpage
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <!-- put a link to the eventual webpage -->
+              <a href="">
+                <img
+                  src="./assets/images/under-development.jpg"
+                  alt="project 3"
+                  class="project-img"
+                />
+              </a>
+            </div>
+            <h2 class="experience-sub-title project-title">Work in Progress</h2>
+            <div class="btn-container">
+              <!-- put a link to the eventual Github -->
+              <button
+                class="btn btn-color-1 project-btn"
+                onclick="location.href = ''"
+              >
+                Github
+              </button>
+              <!-- put a link to the eventual webpage -->
+              <button
+                class="btn btn-color-1 project-btn"
+                onclick="location.href = ''"
+              >
+                Webpage
+              </button>
+            </div>
+          </div>
         </div>
+      </div>
+
+      <img
+        src="./assets/icons/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href = './#contact'"
+      />
     </section>
 
-    
-    <footer>
-        <nav>
-            <div class="nav-links-container">
-                <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#profile">Back to Top</a></li>
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section">
+      <p class="section__text__p1">Get In Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/icons/email.png"
+            alt="Email icon"
+            class="icon contact-icon"
+          />
+          <p
+            class="contact-button icon"
+            role="button"
+            data-toggle="modal"
+            data-target="#emailModal"
+            data-whatever="@mdo"
+          >
+            dawsonjholmes@gmail.com
+          </p>
 
-                </ul>
+          <!-- Contact bootstrap modal that pops up when clicking on my email -->
+          <div
+            class="modal fade"
+            id="emailModal"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="emailModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content modal-with-bg">
+                <div class="modal-header text-center">
+                  <h5 class="modal-title text-center" id="exampleModalLabel">
+                    New message
+                  </h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="form-group">
+                      <label for="recipient-name" class="col-form-label"
+                        >Your Name</label
+                      >
+                      <input type="text" class="form-control" id="name" />
+                    </div>
+                    <div class="form-group">
+                      <label for="recipient-name" class="col-form-label"
+                        >Your Email</label
+                      >
+                      <input type="text" class="form-control" id="email" />
+                    </div>
+                    <div class="form-group">
+                      <label for="message-text" class="col-form-label"
+                        >Your Message</label
+                      >
+                      <textarea class="form-control" id="message"></textarea>
+                    </div>
+                  </form>
+                  <div class="loading-dots" id="loadingDots">
+                    <span></span><span></span><span></span>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-color-2"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-color-1"
+                    id="contactButton"
+                  >
+                    Send
+                  </button>
+                </div>
+              </div>
             </div>
-        </nav>
-        <p>Copyright &#169; 2024 Dawson Holmes. All Rights Reserved. </p>
+          </div>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/icons/linkedin-white.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon linkedin-icon"
+          />
+          <p>
+            <a href="https://www.linkedin.com/in/dawson-holmes-84b592187/"
+              >LinkedIn</a
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#profile">Back to Top</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2026 Dawson Holmes. All Rights Reserved.</p>
     </footer>
- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" 
- integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" 
- crossorigin="anonymous"></script>
- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" 
- integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" 
- crossorigin="anonymous"></script>
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" 
- integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" 
- crossorigin="anonymous"></script>
- <script src="script.js"></script>
- <script src="contact.js"></script>
-</body>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+    <script src="contact.js"></script>
+    <script src="fade.js"></script>
+  </body>
 </html>

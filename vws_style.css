@@ -198,10 +198,10 @@ h3 {
     flex-direction: column;
     justify-content: space-between;
     position: absolute;
-    top: 13rem;
+    top: 11rem;
     right: 0;
     width: 40%;
-    height: 40rem;
+    height: 38rem;
 }
 
 .tech {

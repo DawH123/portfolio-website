@@ -236,6 +236,11 @@ section {
     padding-bottom: 30px;
 }
 
+.text-container {
+    height: 50%;
+    width: 100%;
+}
+
 .about-text-details-container {
     transition: all 300ms ease;
 }
@@ -380,7 +385,7 @@ section {
 
 #about-text {
     color: rgb(255, 255, 255);
-    font-size: 2rem;
+    font-size: 1.85cqi;
 }
 
 /* EXPERIENCE SECTION */
